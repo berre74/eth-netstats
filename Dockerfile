@@ -12,5 +12,5 @@ RUN npm install -g grunt-cli
 RUN grunt
 
 # start app
-EXPOSE 3003
+EXPOSE 3004
 CMD [ "npm", "start" ]
