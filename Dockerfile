@@ -1,5 +1,4 @@
 FROM node:12.18.1
-ENV NODE_ENV=production
 LABEL maintainer="SE <bernard@hotmail.be>"
 
 RUN mkdir -p /usr/src/app
@@ -9,7 +8,7 @@ WORKDIR /usr/src/app
 COPY . . 
 RUN npm install
 RUN npm install -g grunt-cli
-RUN grunt
+RUN grunt all
 
 # start app
 EXPOSE 3004
